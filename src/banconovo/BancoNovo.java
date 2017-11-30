@@ -1,21 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package banconovo;
 
-/**
- *
- * @author gusta
- */
+
 public class BancoNovo {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+  
+    public static void main(String[] args) { 
+        Funcionario f1 = new Gerente();
+        Gerente gerente = new Gerente();
+        
+        
+        f1.setSalario(1200);
+        gerente.setSalario(1200);
+        System.out.println(gerente.getBonificacao());
+        System.out.println(f1.getBonificacao());
     }
     
 }
