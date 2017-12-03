@@ -11,4 +11,6 @@ class ControleDeBonificacoes {
   public double getTotalDeBonificacoes() {
     return this.totalDeBonificacoes;
   }
+  
+  
 }
