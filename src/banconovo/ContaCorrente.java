@@ -2,7 +2,11 @@
 package banconovo;
 
 
-public class ContaCorrente extends Conta{
+public class ContaCorrente extends Conta implements Tributavel{
+
+    public double calcularTributos(){
+    return this.getSaldo() * 0.01;
+}
     
     @Override
     public void atualiza(double taxa){

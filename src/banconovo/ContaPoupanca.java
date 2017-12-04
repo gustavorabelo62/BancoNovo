@@ -3,9 +3,11 @@ package banconovo;
 
 public class ContaPoupanca extends Conta {
 
-    public void atualiaza(double valor){
-    this.saldo += this.saldo *3;
-    
+  
+
+    @Override
+    public void atualiza(double taxa) {
+        this.saldo+= this.saldo*3;
     }
     
 }

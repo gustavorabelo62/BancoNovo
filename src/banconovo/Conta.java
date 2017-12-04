@@ -2,7 +2,7 @@
 package banconovo;
 
 
-public class Conta {
+public abstract class Conta {
     
     protected double saldo;
     
@@ -21,9 +21,9 @@ public class Conta {
         return this.saldo;
     }
     
-     public void atualiza(double taxa) {
-    this.saldo += this.saldo * taxa;
-  }
+     public abstract void atualiza(double taxa);
+    
+  
 
        
     public void setSaldo(double saldo) {
