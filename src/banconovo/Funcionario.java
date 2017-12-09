@@ -1,15 +1,13 @@
 
 package banconovo;
 
-
-public class Funcionario {
+abstract class Funcionario {
     String nome;
     String cpf;
     Double salario;
     
-    public double getBonificacao(){
-        return this.salario * 1.10;
-    } 
+    abstract double getBonificacao();
+ 
 
    public String getNome(){
        return nome;
