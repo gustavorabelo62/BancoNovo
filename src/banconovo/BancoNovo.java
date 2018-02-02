@@ -1,11 +1,16 @@
 
 package banconovo;
 
+import java.io.PrintStream;
+
 
 public class BancoNovo {
 
   
     public static void main(String[] args) { 
+        PrintStream saida = System.out;
+        saida.println("ola mundo");
+        
         Funcionario f1 = new Gerente();
         Gerente gerente = new Gerente();
        
