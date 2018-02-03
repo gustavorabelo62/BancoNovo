@@ -7,6 +7,8 @@ abstract class Funcionario {
     Double salario;
     
     abstract double getBonificacao();
+    
+    @Override
     public String toString(){
         return "[titulo="+ nome +", numero ="+ cpf + ", agencia="+ salario+ "]";
     
